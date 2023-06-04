@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My landing page</title>
+  <style type="text/css">
+    *{padding: 0;margin:0;box-sizing: border-box;}
+    header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+                 url('');
+    background-size:cover;
+    font-family: sans-serif;
+  }
+  nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    color:black;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+     .menu a{
+      text-decoration: none ;
+      color: white;
+      padding: 10px 20px;
+      font-size: 20px;
+  }
+  .menu a:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0%;
+    height:100%;
+    border-bottom:2px solid indianred;
+    transition: 0.4s linear;
+  }
+  .menu a:hover:before{
+    width:90%;
+  }
+  .appointment a{
+       text-decoration: none ;
+       color: white;
+       padding: 10px 20px;
+       font-size: 20px;
+       background: indianred;
+       border-radius: 8px;
+       transition: 0.4s;
+  }
+  .appointment a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+  }
+
+  .h-txt{
+    max-width: 650px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+  }
+  .h-txt span{
+    letter-spacing: 5px;
+  }
+  .h-txt h2{
+    font-size: 2.5em;
+  }
+  .h-txt a{
+    text-decoration: none;
+    background: indianred;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+  }
+  .h-txt a:hover{
+    background: transparent;
+    border: 2px red;
+  }
+  </style>
+</head>
+  <header>
+    <nav>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">Doctors</a>
+          <a href="#">Prices</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="appointment">
+          <a href="#">Appointment</a>
+        </div>
+    </nav>
+    <section class="h-txt">
+      <h1>Welcome to Anoke Medical Clinic website</h1>
+      <span>we provide best eye care services </span>
+      <br>
+      <!-- <a href="#">appointment</a> -->
+    </section>
+    <footer>
+      <p>&copy; All rights reserved.</p>
+    </footer>
+  </header>
+</body>
+</html>
